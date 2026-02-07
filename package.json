@@ -1,0 +1,28 @@
+{
+    "name": "@openclaw/feishu-doc-comment",
+    "version": "0.1.0",
+    "description": "Feishu document comment polling plugin for OpenClaw - responds to document comments via Agent",
+    "main": "plugin.ts",
+    "type": "module",
+    "scripts": {
+        "build": "echo 'No build needed - jiti loads TS at runtime'"
+    },
+    "keywords": [
+        "openclaw",
+        "feishu",
+        "document",
+        "comment",
+        "polling"
+    ],
+    "author": "Clark",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^1.6.0"
+    },
+    "openclaw": {
+        "extensions": [
+            "./plugin.ts"
+        ],
+        "installDependencies": true
+    }
+}

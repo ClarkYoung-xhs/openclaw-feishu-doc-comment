@@ -1,0 +1,32 @@
+{
+    "id": "feishu-doc-comment",
+    "name": "Feishu Document Comment",
+    "version": "0.2.0",
+    "description": "Monitor and respond to Feishu document comments via polling. Supports index document pattern.",
+    "author": "Clark",
+    "configSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "enabled": {
+                "type": "boolean",
+                "default": true
+            },
+            "pollIntervalMinutes": {
+                "type": "number",
+                "default": 15
+            },
+            "indexDocument": {
+                "type": "string",
+                "description": "Token of index document containing links to monitored docs"
+            },
+            "watchedFiles": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                },
+                "default": []
+            }
+        }
+    }
+}

@@ -1,0 +1,5 @@
+{
+    "pollIntervalMinutes": 15,
+    "indexDocument": "YOUR_INDEX_DOCUMENT_TOKEN",
+    "watchedFiles": []
+}
